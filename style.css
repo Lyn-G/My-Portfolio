@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+/* change link colors */
+a:visited,
+a:active {
+  text-decoration: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+a:link {
+  color: black;
+}
+a:hover {
+  color: whitesmoke;
+}
+
 :root {
   --header-outer-height: 110px;
   --header-inner-height: 70px;
