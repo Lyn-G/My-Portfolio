@@ -6,7 +6,98 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello, I'm [Your Name]</h1>
-    <p>This is my portfolio site!</p>
+    <!-- Main Header -->
+    <header>
+      <h3>My Portfolio</h3>
+    </header>
+
+    <!-- all the projects -->
+    <div class="portfolio-grid">
+      <div class="project-item">
+        <h4>Amusia</h4>
+        <img
+          src="Images/Amusia gameplay.gif"
+          class="project-gif"
+          alt="Project 1"
+        />
+        <p>
+          My proudest accomplishment, despite still being a work in progress,
+          has been this Unity game that I’ve been working on since December
+          2023. As an assistant producer, I helped manage the timeline and track
+          each team member’s progress. I checked in with different groups of
+          people—artists, programmers, level designers, debuggers—to update
+          Trello and let the production lead know of any issues.
+        </p>
+        <p>
+          For IX design and programming, I created and implemented the main
+          menu, settings menu, and the cutscenes that play before it. This
+          involved coding the scene transitions and sound design for seamless
+          transitions. I also implemented multilingual support, integrating
+          Chinese text into the game with plans to support additional languages.
+        </p>
+        <p>
+          One of my key contributions has been implementing a teleportation
+          system that allows players to travel between different in-game
+          locations based on if they collected the unlockables. I structured
+          this using a dictionary ADT to efficiently manage unlocked
+          teleportation points, ensuring that player progress is saved and
+          carried over between scenes. Additionally, I developed the lore book
+          feature, which tracks the player’s discoveries throughout the game.
+          Players can navigate the book using keyboard or controller inputs to
+          review previously unlocked entries. I used the same dictionary-based
+          system and JSON serialization to enable auto-saving after collection
+          so that all unlocked items are remembered across sessions.
+        </p>
+      </div>
+      <div class="project-item">
+        <h4>Evocation</h4>
+        <img
+          src="Images/Evocation gameplay.gif"
+          class="project-gif"
+          alt="Project 2"
+        />
+        <p>
+          During the brainstorming process, my team and I knew that we wanted to
+          experiment with time-based elements. This caused us to think of
+          creative gameplay mechanics such as seasons changing or geography
+          altering due to erosion. Ultimately, it flourished into this
+          idea—where the player controls an orb that reveals bits from the past.
+        </p>
+        <p>
+          I largely handled conception and designing the visionaries that our
+          team had. For scripting, I established the menus, scene transitions,
+          and cutscenes. We used Unity to bring the game elements to life. I was
+          the primary lead for managing the project timeline and setting
+          milestones to ensure the game was released on time.
+        </p>
+      </div>
+      <div class="project-item">
+        <h4>Snake</h4>
+        <img
+          src="Images/Snake gameplay.gif"
+          class="project-gif"
+          alt="Project 3"
+        />
+        <p>
+          In this project, I developed an enhanced version of the classic Snake
+          game, featuring both a player-controlled snake and an AI-controlled
+          opponent. The unique twist lies in the shared growth mechanic:
+          whenever the player collects food, the AI snake grows as well,
+          progressively raising the difficulty. The AI dynamically tracks the
+          player's position using a 2D coordinate system and plots a basic path
+          toward the player’s head, simulating pursuit behavior in real time.
+        </p>
+        <p>
+          To implement this, I created a grid-based system to manage movement,
+          food spawning, and collision detection. The AI uses the player's X and
+          Y coordinates to calculate its direction each frame, adding strategic
+          tension as the game progresses. This project allowed me to explore AI
+          behavior modeling, game loop synchronization, and coordinate-based
+          logic, while also sharpening my skills in debugging, modular design,
+          and interactive gameplay development.
+        </p>
+      </div>
+      <!-- Add more project-item blocks as needed -->
+    </div>
   </body>
 </html>

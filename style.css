@@ -1,6 +1,36 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-item {
   text-align: center;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-gif {
+  width: 100%;
+  max-width: auto;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* stacks to 1 column on smaller screens */
+  }
 }
