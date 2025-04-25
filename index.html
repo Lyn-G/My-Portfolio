@@ -3,22 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Portfolio</title>
+
+    <!-- header font -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- body font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <!-- Main Header -->
-    <header>
-      <h3>My Portfolio</h3>
+    <header class="header-outer">
+      <div class="header-inner responsive-wrapper">
+        <h1 class="site-title">Lynelle Goh's Portfolio</h1>
+      </div>
     </header>
 
     <!-- all the projects -->
+
     <div class="portfolio-grid">
       <div class="project-item">
-        <h4>Amusia</h4>
+        <h2>Amusia</h2>
         <img
           src="Images/Amusia gameplay.gif"
           class="project-gif"
-          alt="Project 1"
+          alt="Gameplay from Amusia, a Unity project"
         />
         <p>
           My proudest accomplishment, despite still being a work in progress,
@@ -50,11 +68,11 @@
         </p>
       </div>
       <div class="project-item">
-        <h4>Evocation</h4>
+        <h2>Evocation</h2>
         <img
           src="Images/Evocation gameplay.gif"
           class="project-gif"
-          alt="Project 2"
+          alt="Gameplay from Evocation, a Unity project"
         />
         <p>
           During the brainstorming process, my team and I knew that we wanted to
@@ -72,11 +90,11 @@
         </p>
       </div>
       <div class="project-item">
-        <h4>Snake</h4>
+        <h2>Snake</h2>
         <img
           src="Images/Snake gameplay.gif"
           class="project-gif"
-          alt="Project 3"
+          alt="Gameplay from Snake, a Unity project"
         />
         <p>
           In this project, I developed an enhanced version of the classic Snake
@@ -97,7 +115,6 @@
           and interactive gameplay development.
         </p>
       </div>
-      <!-- Add more project-item blocks as needed -->
     </div>
   </body>
 </html>
